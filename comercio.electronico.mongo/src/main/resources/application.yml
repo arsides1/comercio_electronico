@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ecommerce
+      database: ecommerce
+  application:
+    name: pedido-service
+
+server:
+  port: 8082
+
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
+    com.comercio.electronico: DEBUG

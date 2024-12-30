@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: customer-product-service
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/ecommerce
+    username: postgres
+    password: admin
+    pool:
+      initial-size: 5
+      max-size: 20
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+    com.ecommerce: DEBUG
+    org.springframework.r2dbc: DEBUG
+    io.r2dbc.postgresql: DEBUG
